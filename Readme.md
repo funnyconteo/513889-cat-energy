@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Рябиков](https://up.htmlacademy.ru/adaptive/14/user/513889).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Баранков](https://htmlacademy.ru/profile/id518169).
 
 ---
 
