@@ -1,0 +1,22 @@
+.program {
+  background-image: url('../img/index-background-mobile@1x.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 305px;
+  padding-top: 32px;
+}
+.program__title {
+  font-family: 'Oswald Regular', Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fff;
+}
+.program__description {
+  font-family: 'Oswald Regular', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 12px;
+  margin-bottom: 30px;
+}

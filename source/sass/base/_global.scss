@@ -35,8 +35,10 @@ html {
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
+  &:hover {
+    background-color: #5eaa2f;
+  }
   &:active {
     color: rgba(255, 255, 255, .3);
   }
 }
-
