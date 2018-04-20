@@ -62,3 +62,43 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 }
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider__button {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.slider__toggle-field {
+  width: 82px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider__toggle-button {
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 10px;
+  position: absolute;
+  left: 6px;
+}
+
+.toggle-active {
+  transform: translateX(35px);
+}

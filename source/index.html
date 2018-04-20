@@ -13,8 +13,7 @@
     <nav class="main-nav">
       <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <li class="site-list__item site-list__header">
           <a class="page-header__logo-image page-header__link">
             <svg width="192" height="38">
               <style type="text/css">
@@ -52,14 +51,15 @@
               </g>
             </svg>
           </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__menu">
           <a class="page-header__link">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__menu">
           <a class="page-header__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__menu">
           <a class="page-header__link" href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -67,11 +67,13 @@
   </header>
   <main class="index-main">
     <section class="program">
-      <h2 class="visually-hidden">Подобрать программу</h2>
-      <b class="program__title">Функциональное питание для котов</b>
-      <p class="program__description">Занялся собой? Займись котом!</p>
-      <img class="program__image" src="img/index-can-mobile@1x.png" alt="«cat energy pro» с курицей" width="280" height="270">
-      <a class="btn" href="#">Подобрать программу</a>
+      <div class="program__wrapper">
+        <h2 class="visually-hidden">Подобрать программу</h2>
+        <b class="program__title">Функциональное питание для котов</b>
+        <p class="program__description">Занялся собой? Займись котом!</p>
+        <img class="program__image" src="img/index-can-mobile@1x.png" alt="«cat energy pro» с курицей" width="280" height="270">
+        <a class="btn" href="#">Подобрать программу</a>
+      </div>
     </section>
     <section class="categories">
       <h2 class="visually-hidden">Категории товаров</h2>
@@ -151,10 +153,19 @@
         </div>
       </div>
       <p class="example__cost">Затраты на питание: 15 000 руб.</p>
-      <img class="example__before" src="img/before-mobile@1x.png" alt="Кот до перехода на Cat energy" width="320" height="240">
-      <img class="example__after" src="img/after-mobile@1x.png" alt="Кот после перехода на Cat energy" width="320" height="240">
+      <div class="example__wrapper">
+        <img class="example__before" src="img/before-mobile@1x.png" alt="Кот до перехода на Cat energy" width="320" height="240">
+        <img class="example__after" src="img/after-mobile@1x.png" alt="Кот после перехода на Cat energy" width="320" height="240">
+        <div class="example__slider-wrapper slider">
+          <button class="slider__button">Было</button>
+          <div class="slider__toggle-field">
+            <div class="slider__toggle-button toggle-active"></div>
+          </div>
+          <button class="slider__button">Стало</button>
+        </div>
+      </div>
     </section>
-    <section class="contacts">
+    <section class="contacts index-contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <ul class="contacts__list">
         <li class="contacts__cooperation">
@@ -165,7 +176,7 @@
         </li>
       </ul>
       <div class="example__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1fbe645a96d016028145b9239ac29a9cc98b0b2180aec4d29e2d09fb25909462&amp;source=constructor" width="320" height="400" frameborder="0"></iframe>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1fbe645a96d016028145b9239ac29a9cc98b0b2180aec4d29e2d09fb25909462&amp;source=constructor"></iframe>
       </div>
     </section>
   </main>

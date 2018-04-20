@@ -13,9 +13,8 @@
     <nav class="main-nav">
       <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <a class="page-header__logo-image page-header__link">
+        <li class="site-list__item site-list__header">
+          <a class="page-header__logo-image page-header__link" href="index.html">
             <svg width="192" height="38">
               <style type="text/css">
                 .st0 {
@@ -52,15 +51,16 @@
               </g>
             </svg>
           </a>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </li>
-        <li class="site-list__item">
-          <a class="page-header__link">Главная</a>
+        <li class="site-list__item site-list__menu">
+          <a class="page-header__link" href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="site-list__item site-list__menu">
           <a class="page-header__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item">
-          <a class="page-header__link" href="form.html">Подбор программы</a>
+        <li class="site-list__item site-list__menu">
+          <a class="page-header__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -92,15 +92,15 @@
         </fieldset>
         <fieldset class="form__program-data form__fieldset">
           <p class="form__slim-wrapper">
-            <input class="form__slim-input visually-hidden" type="radio" name="program" value="slim" id="slim" checked>
+            <input class="form__program-input visually-hidden" type="radio" name="program" value="slim" id="slim" checked>
             <label class="form__program-label form__label" for="slim">Похудение</label>
           </p>
           <p class="form__mass-wrapper">
-            <input class="form__mass-input visually-hidden" type="radio" name="program" value="mass" id="mass">
+            <input class="form__program-input visually-hidden" type="radio" name="program" value="mass" id="mass">
             <label class="form__program-label form__label" for="mass">Набор массы</label>
           </p>
           <p class="form__advice-wrapper">
-            <input class="form__advice-input visually-hidden" type="radio" name="program" value="advice" id="advice">
+            <input class="form__program-input visually-hidden" type="radio" name="program" value="advice" id="advice">
             <label class="form__program-label form__label" for="advice">Не знаю (Нужен ваш совет)</label>
           </p>
         </fieldset>
@@ -108,15 +108,15 @@
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <p class="form__text-wrapper form__mail-wrapper">
             <label class="form__text-data form__label" for="email">E-mail:<sup>*</sup></label>
-            <input class="form__text-input form__mail-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
-            <svg width="17" height="13" class="form__input-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
+            <input class="form__text-input form__mail-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+            <svg class="form__input-logo" width="17" height="13" class="form__input-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
               <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
             </svg>
           </p>
           <p class="form__text-wrapper form__phone-wrapper">
             <label class="form__text-data form__label" for="tel">Телефон:<sup>*</sup></label>
             <input class="form__text-input form__mail-input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
-            <svg width="20" height="20" class="form__input-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+            <svg class="form__input-logo" width="20" height="20" class="form__input-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
               <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
               <path
                 d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
@@ -133,19 +133,19 @@
         <fieldset class="form__additional-data form__fieldset">
           <legend class="form__legend">Дополнительно</legend>
           <p class="form__substitute-wrapper">
-            <input class="form__substitute-input visually-hidden" type="checkbox" name="substitute" id="substitute" checked>
+            <input class="form__additional-input visually-hidden" type="checkbox" name="substitute" id="substitute" checked>
             <label class="form__additional-label form__label" for="substitute">Сахарозаменитель</label>
           </p>
           <p class="form__water-wrapper">
-            <input class="form__water-input visually-hidden" type="checkbox" name="water" id="water">
+            <input class="form__additional-input visually-hidden" type="checkbox" name="water" id="water">
             <label class="form__additional-label form__label" for="water">Питьевая вода</label>
           </p>
           <p class="form__milk-wrapper">
-            <input class="form__milk-input visually-hidden" type="checkbox" name="milk" id="milk">
+            <input class="form__additional-input visually-hidden" type="checkbox" name="milk" id="milk">
             <label class="form__additional-label form__label" for="milk">Молоко</label>
           </p>
           <p class="form__vitamin-wrapper">
-            <input class="form__vitamin-input visually-hidden" type="checkbox" name="vitamin" id="vitamin">
+            <input class="form__additional-input visually-hidden" type="checkbox" name="vitamin" id="vitamin">
             <label class="form__additional-label form__label" for="vitamin">Витамины</label>
           </p>
         </fieldset>
@@ -164,13 +164,13 @@
         </li>
       </ul>
       <div class="example__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1fbe645a96d016028145b9239ac29a9cc98b0b2180aec4d29e2d09fb25909462&amp;source=constructor" width="320" height="400" frameborder="0"></iframe>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1fbe645a96d016028145b9239ac29a9cc98b0b2180aec4d29e2d09fb25909462&amp;source=constructor"></iframe>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__logo">
-      <a class="page-footer__logo-link">
+      <a class="page-footer__logo-link page-footer__logo-link--active" href="index.html">
         <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="логотип" width="128" height="24">
       </a>
     </div>
