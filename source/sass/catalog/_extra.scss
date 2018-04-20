@@ -1,16 +1,18 @@
 .extra {
   padding-left: 20px;
 }
+
 .extra__title {
-  font-family: 'Oswald Regular', Arial, sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   color: #111111;
+
   &::after {
-    content: '';
+    content: "";
     flex-grow: 1;
     flex-shrink: 0;
     width: 53px;
@@ -20,45 +22,54 @@
     margin-top: 7px;
   }
 }
+
 .extra__additional {
   list-style: none;
   padding: 0;
   margin: 0;
   margin-right: 20px;
 }
+
 .additional__item {
   padding-bottom: 15px;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
 }
+
 .additional__title {
-  font-family: 'Oswald Regular', Arial, sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
   text-transform: uppercase;
 }
+
 .additional__subscribe {
   width: 100%;
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.additional__value, .additional__field {
-  font-family: 'Arial', sans-serif;
+
+.additional__value,
+.additional__field {
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
 }
+
 .additional__value {
   text-align: left;
 }
+
 .additional__field {
   text-align: right;
 }
+
 .additional__footer {
   margin-top: 40px;
-  background-image: url('../img/gift-photo-mobile@1x.jpg');
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -69,11 +80,13 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 .additional__picture {
-  fill: #fff;
+  fill: #ffffff;
 }
+
 .additional__gift {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

@@ -1,4 +1,6 @@
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -6,39 +8,45 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 body {
   margin: 0;
   padding: 0;
 }
+
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
+
 html {
   box-sizing: border-box;
 }
+
 .btn {
-  font-family: 'Oswald Regular', Arial, sans-serif;
+  font-family: "Oswald Regular", "Arial", sans-serif;
   display: flex;
   flex-wrap: wrap;
   width: 280px;
   min-height: 40px;
   background-color: #68b738;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
+
   &:hover {
     background-color: #5eaa2f;
   }
+
   &:active {
-    color: rgba(255, 255, 255, .3);
+    color: rgba(255, 255, 255, 0.3);
   }
 }
