@@ -1,0 +1,104 @@
+.example {
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 35px 20px 35px 20px;
+}
+
+.example__title {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 60px;
+  margin-top: 0;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.example__field {
+  display: block;
+  position: relative;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  width: 124px;
+}
+
+.example__field-title {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__field-description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+  position: absolute;
+  width: 88px;
+  background-color: #f2f2f2;
+  left: 18px;
+  bottom: -28px;
+}
+
+.example__cost {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider__button {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.slider__toggle-field {
+  width: 82px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider__toggle-button {
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 10px;
+  position: absolute;
+  left: 6px;
+}
+
+.toggle-active {
+  transform: translateX(35px);
+}

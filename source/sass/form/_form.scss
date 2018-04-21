@@ -1,0 +1,213 @@
+.form-section {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.form__legend {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #111111;
+  margin-bottom: 37px;
+  margin-top: 30px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #68b738;
+    margin-left: 20px;
+    margin-top: 14px;
+  }
+}
+
+.form__text-fieldset {
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 7px;
+  margin-top: 23px;
+}
+
+.form__text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.form__label {
+  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-right: 15px;
+}
+
+.form__text-input {
+  padding: 16px 0 16px 16px;
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  outline: none;
+  background-color: transparent;
+
+  &:hover {
+    border-color: #cfcfcf;
+  }
+
+  &:focus {
+    border: 1px solid #4d4d4d;
+    outline: 1px solid #4d4d4d;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8888;
+    outline: 1px solid #ff8888;
+  }
+
+  &:focus + .form__input-logo {
+    fill: #68b738;
+  }
+
+  &:invalid + .form__input-logo {
+    fill: #ff8888;
+  }
+}
+
+.form__program-data {
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 8px;
+}
+
+.form__input-logo {
+  position: absolute;
+  right: 16px;
+}
+
+.form__program-label {
+  padding-left: 47px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -6px;
+  }
+
+  &:hover {
+    &::before {
+      border-color: #bcbcbc;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.form__program-input {
+  &:checked + .form__program-label {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: #68b738;
+      border-radius: 50%;
+      left: 9px;
+      top: 3px;
+    }
+  }
+}
+
+.form__comment-textarea {
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  outline: none;
+
+  &:hover {
+    border-color: #cfcfcf;
+  }
+
+  &:focus {
+    border: 1px solid #4d4d4d;
+    outline: 1px solid #4d4d4d;
+  }
+
+  &:invalid {
+    border: 1px solid #ff8888;
+    outline: 1px solid #ff8888;
+  }
+}
+
+.form__additional-label {
+  padding-left: 47px;
+  position: relative;
+  display: block;
+  margin-bottom: 29px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 28px;
+    height: 28px;
+    border: 1px solid #cdcdcd;
+    position: absolute;
+    left: 0;
+    top: -6px;
+  }
+
+  &:hover {
+    &::before {
+      border-color: #bcbcbc;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.form__additional-input {
+  &:checked + .form__additional-label {
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 21px;
+      height: 16px;
+      background-image: url("../img/icon-tick.svg");
+      left: 5px;
+      top: 2px;
+    }
+  }
+}
+
+.form-btn {
+  border: none;
+  margin-bottom: 24px;
+}
+
+.form__footer-subtext {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}
