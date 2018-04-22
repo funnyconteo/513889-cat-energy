@@ -1,5 +1,4 @@
 .contacts {
-  padding-top: 35px;
   background-color: #f2f2f2;
 }
 
@@ -11,8 +10,19 @@
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .contacts__list {
+    padding: 60px 70px;
+    margin: 0;
+  }
 }
 
 .contacts__cooperation {
@@ -20,6 +30,26 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  min-width: 140px;
+}
+
+@media (min-width: 768px) {
+  .contacts__cooperation {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts__list-item {
+    width: 160px;
+  }
+}
+
+.contacts__adress-wrapper {
+  list-style: none;
+  padding: 0;
+  color: #444444;
+  min-width: 140px;
 }
 
 .contacts__adress {
@@ -27,7 +57,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 27px;
+}
+
+@media (min-width: 768px) {
+  .contacts__adress {
+    text-align: right;
+  }
+
+  .contacts__adress-town {
+    margin-top: 20px;
+  }
 }
 
 .example__map {

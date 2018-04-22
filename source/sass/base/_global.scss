@@ -16,6 +16,15 @@ input[type="radio"].visually-hidden {
 body {
   margin: 0;
   padding: 0;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
 }
 
 img {
@@ -36,13 +45,13 @@ html {
   line-height: 20px;
   display: flex;
   flex-wrap: wrap;
-  width: 280px;
   min-height: 40px;
   background-color: #68b738;
   color: #ffffff;
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   &:hover {
     background-color: #5eaa2f;

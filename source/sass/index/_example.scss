@@ -4,6 +4,13 @@
   padding: 35px 20px 35px 20px;
 }
 
+@media (min-width: 768px) {
+  .example {
+    margin: 0;
+    background: none;
+  }
+}
+
 .example__title {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 36px;
@@ -11,21 +18,56 @@
   margin-top: 0;
 }
 
+@media (min-width: 768px) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+  }
+}
+
 .example__description {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: #444444;
+}
+
+@media (min-width: 768px) {
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__list {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 40px;
 }
 
+@media (min-width: 768px) {
+  .example__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__field-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .example__field-wrapper {
+    width: 370px;
+  }
+}
+
 .example__field {
-  display: block;
+  display: flex;
+  justify-content: center;
   position: relative;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
@@ -35,11 +77,25 @@
   width: 124px;
 }
 
+@media (min-width: 768px) {
+  .example__field {
+    width: 165px;
+  }
+}
+
 .example__field-title {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .example__field-title {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__field-description {
@@ -49,10 +105,23 @@
   line-height: 12px;
   display: block;
   position: absolute;
-  width: 88px;
+  width: 80px;
   background-color: #f2f2f2;
-  left: 18px;
   bottom: -28px;
+}
+
+@media (min-width: 768px) {
+  .example__field-description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    width: 140px;
+    bottom: -20px;
+  }
+
+  .example__field-description--short {
+    width: 115px;
+  }
 }
 
 .example__cost {
@@ -61,6 +130,26 @@
   line-height: 20px;
   text-transform: uppercase;
   margin-bottom: 40px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .example__cost {
+    font-size: 20px;
+    line-height: 24px;
+    width: 180px;
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .example__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 50%, #eaeaea 50%);
+    padding-bottom: 80px;
+  }
 }
 
 .slider {
@@ -79,6 +168,17 @@
   background-color: transparent;
 }
 
+@media (min-width: 768px) {
+  .slider__button {
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    padding: 0;
+    padding-bottom: 7px;
+    border-bottom: 1px dashed #bebebe;
+  }
+}
+
 .slider__toggle-field {
   width: 82px;
   height: 12px;
@@ -88,6 +188,15 @@
   position: relative;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .slider__toggle-field {
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+  }
 }
 
 .slider__toggle-button {
@@ -101,4 +210,13 @@
 
 .toggle-active {
   transform: translateX(35px);
+}
+
+@media (min-width: 768px) {
+  .slider__toggle-button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+  }
 }

@@ -2,11 +2,25 @@
   padding: 0 20px;
 }
 
+@media (min-width: 768px) {
+  .title-section {
+    padding: 0 30px;
+  }
+}
+
 .title-section__title {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .title-section__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .title-section__description {
@@ -15,4 +29,13 @@
   line-height: 18px;
   color: #111111;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .title-section__description {
+    font-size: 20px;
+    line-height: 30px;
+    width: 345px;
+    margin-left: 40px;
+  }
 }

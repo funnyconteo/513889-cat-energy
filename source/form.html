@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cat energy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <h1 class="visually-hidden">Интернет-магазин кошачьего корма «Cat energy»</h1>
+    <h1 class="visually-hidden">Ассортимент «Cat energy»</h1>
     <nav class="main-nav">
       <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul class="main-nav__list site-list">
@@ -53,14 +54,18 @@
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </li>
-        <li class="site-list__item site-list__menu">
-          <a class="page-header__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item site-list__menu">
-          <a class="page-header__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="site-list__item site-list__menu">
-          <a class="page-header__link">Подбор программы</a>
+        <li class="site-list__user-menu">
+          <ul class="site-list__user-items">
+            <li class="site-list__item site-list__menu">
+              <a class="page-header__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__menu">
+              <a class="page-header__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__menu">
+              <a class="page-header__link page-header__link--active">Подбор программы</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -105,7 +110,7 @@
           </p>
         </fieldset>
         <fieldset class="form__feedback-data form__fieldset">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
+          <p class="form__legend">Контактные данные (владельца кота)</p>
           <p class="form__text-wrapper form__mail-wrapper">
             <label class="form__text-data form__label" for="email">E-mail:<sup>*</sup></label>
             <input class="form__text-input form__mail-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -127,40 +132,49 @@
           </p>
         </fieldset>
         <fieldset class="form__comment-data form__fieldset">
-          <legend class="form__legend">Комментарий</legend>
-          <textarea class="form__comment-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <p class="form__legend">Комментарий</p>
+          <p class="form__comment-wrapper">
+            <textarea class="form__comment-textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </p>
         </fieldset>
         <fieldset class="form__additional-data form__fieldset">
-          <legend class="form__legend">Дополнительно</legend>
-          <p class="form__substitute-wrapper">
-            <input class="form__additional-input visually-hidden" type="checkbox" name="substitute" id="substitute" checked>
-            <label class="form__additional-label form__label" for="substitute">Сахарозаменитель</label>
-          </p>
-          <p class="form__water-wrapper">
-            <input class="form__additional-input visually-hidden" type="checkbox" name="water" id="water">
-            <label class="form__additional-label form__label" for="water">Питьевая вода</label>
-          </p>
-          <p class="form__milk-wrapper">
-            <input class="form__additional-input visually-hidden" type="checkbox" name="milk" id="milk">
-            <label class="form__additional-label form__label" for="milk">Молоко</label>
-          </p>
-          <p class="form__vitamin-wrapper">
-            <input class="form__additional-input visually-hidden" type="checkbox" name="vitamin" id="vitamin">
-            <label class="form__additional-label form__label" for="vitamin">Витамины</label>
-          </p>
+          <p class="form__legend">Дополнительно</p>
+          <div class="form__additional-field">
+            <p class="form__additiona-wrapper">
+              <input class="form__additional-input visually-hidden" type="checkbox" name="substitute" id="substitute" checked>
+              <label class="form__additional-label form__label" for="substitute">Сахарозаменитель</label>
+            </p>
+            <p class="form__additiona-wrapper">
+              <input class="form__additional-input visually-hidden" type="checkbox" name="water" id="water">
+              <label class="form__additional-label form__label" for="water">Питьевая вода</label>
+            </p>
+            <p class="form__additiona-wrapper">
+              <input class="form__additional-input visually-hidden" type="checkbox" name="milk" id="milk">
+              <label class="form__additional-label form__label" for="milk">Молоко</label>
+            </p>
+            <p class="form__additiona-wrapper">
+              <input class="form__additional-input visually-hidden" type="checkbox" name="vitamin" id="vitamin">
+              <label class="form__additional-label form__label" for="vitamin">Витамины</label>
+            </p>
+          </div>
         </fieldset>
-        <button class="btn form-btn" type="submit">Отправить заявку</button>
-        <p class="form__footer-subtext">* — Обязательные поля</p>
+        <div class="form__footer">
+          <button class="btn form-btn" type="submit">Отправить заявку</button>
+          <p class="form__footer-subtext">* — Обязательные поля</p>
+        </div>
       </form>
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <ul class="contacts__list">
-        <li class="contacts__cooperation">
+        <li class="contacts__cooperation contacts__list-item">
           приглашаем к сотрудничеству дилеров!
         </li>
-        <li class="contacts__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        <li class="contacts__list-item">
+          <ul class="contacts__adress-wrapper">
+            <li class="contacts__adress">ул. Большая Конюшенная, д. 19/8</li>
+            <li class="contacts__adress contacts__adress-town">Санкт-Петербург</li>
+          </ul>
         </li>
       </ul>
       <div class="example__map">
