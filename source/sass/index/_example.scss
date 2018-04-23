@@ -11,6 +11,13 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .example {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .example__title {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 36px;
@@ -26,6 +33,13 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .example__content {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .example__description {
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -38,6 +52,7 @@
   .example__description {
     font-size: 16px;
     line-height: 24px;
+    width: 100%;
   }
 }
 
@@ -49,6 +64,13 @@
   .example__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example__list {
+    width: 430px;
   }
 }
 
@@ -142,6 +164,14 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .example__cost {
+    width: 325px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: 768px) {
   .example__wrapper {
     display: flex;
@@ -149,6 +179,12 @@
     justify-content: center;
     background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 50%, #eaeaea 50%);
     padding-bottom: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example__wrapper {
+    width: 610px;
   }
 }
 

@@ -12,6 +12,13 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .page-footer {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .page-footer__logo {
   margin-bottom: 30px;
   display: flex;

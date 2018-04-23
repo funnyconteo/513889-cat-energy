@@ -15,7 +15,7 @@
       <h2 class="visually-hidden">Навигация по сайту</h2>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__header">
-          <a class="page-header__logo-image page-header__link">
+          <a class="page-header__logo-image page-header__link page-header__logo-image--index">
             <svg width="192" height="38">
               <style type="text/css">
                 .st0 {
@@ -57,13 +57,13 @@
         <li class="site-list__user-menu">
           <ul class="site-list__user-items">
             <li class="site-list__item site-list__menu">
-              <a class="page-header__link page-header__link--active">Главная</a>
+              <a class="page-header__link page-header__link--index page-header__link--active">Главная</a>
             </li>
             <li class="site-list__item site-list__menu">
-              <a class="page-header__link" href="catalog.html">Каталог продукции</a>
+              <a class="page-header__link page-header__link--index" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item site-list__menu">
-              <a class="page-header__link" href="form.html">Подбор программы</a>
+              <a class="page-header__link page-header__link--index" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </li>
@@ -144,38 +144,40 @@
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив
-        свой обычный корм на Cat Energy Slim. Отличный
-        результат без изнуряющих тренировок! При этом
-        он не менял своих привычек и по-прежнему спит
-        по 16 часов в день.
-      </p>
-      <div class="example__list">
-        <div class="example__field-wrapper">
-          <div class="example__field">
-            <b class="example__field-title">5 кг</b>
-            <p class="example__field-description example__field-description--short">снижение веса</p>
+      <div class="example__content">
+        <div class="example__list">
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив
+            свой обычный корм на Cat Energy Slim. Отличный
+            результат без изнуряющих тренировок! При этом
+            он не менял своих привычек и по-прежнему спит
+            по 16 часов в день.
+          </p>
+          <div class="example__field-wrapper">
+            <div class="example__field">
+              <b class="example__field-title">5 кг</b>
+              <p class="example__field-description example__field-description--short">снижение веса</p>
+            </div>
+            <div class="example__field">
+              <b class="example__field-title">60 дней</b>
+              <p class="example__field-description">затрачено времени</p>
+            </div>
           </div>
-          <div class="example__field">
-            <b class="example__field-title">60 дней</b>
-            <p class="example__field-description">затрачено времени</p>
-          </div>
+          <p class="example__cost">
+            <span>Затраты на питание:</span>
+            <span>15 000 руб.</span>
+          </p>
         </div>
-        <p class="example__cost">
-          <span>Затраты на питание:</span>
-          <span>15 000 руб.</span>
-        </p>
-      </div>
-      <div class="example__wrapper">
-        <img class="example__before" src="img/before-mobile@1x.png" alt="Кот до перехода на Cat energy" width="320" height="240">
-        <img class="example__after" src="img/after-mobile@1x.png" alt="Кот после перехода на Cat energy" width="320" height="240">
-        <div class="example__slider-wrapper slider">
-          <button class="slider__button">Было</button>
-          <div class="slider__toggle-field">
-            <div class="slider__toggle-button toggle-active"></div>
+        <div class="example__wrapper">
+          <img class="example__before" src="img/before-mobile@1x.png" alt="Кот до перехода на Cat energy" width="320" height="240">
+          <img class="example__after" src="img/after-mobile@1x.png" alt="Кот после перехода на Cat energy" width="320" height="240">
+          <div class="example__slider-wrapper slider">
+            <button class="slider__button">Было</button>
+            <div class="slider__toggle-field">
+              <div class="slider__toggle-button toggle-active"></div>
+            </div>
+            <button class="slider__button">Стало</button>
           </div>
-          <button class="slider__button">Стало</button>
         </div>
       </div>
     </section>

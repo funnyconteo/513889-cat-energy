@@ -8,6 +8,13 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .title-section {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .title-section__title {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 36px;
@@ -37,5 +44,11 @@
     line-height: 30px;
     width: 345px;
     margin-left: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title-section__description {
+    margin: 0;
   }
 }
