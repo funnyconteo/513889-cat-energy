@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 40px 20px 30px 20px;
+  padding: 39px 20px 10px 20px;
   background-color: #f2f2f2;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .page-footer__logo {
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   display: flex;
   justify-content: center;
 }
@@ -58,7 +58,7 @@
 }
 
 .social__item {
-  margin: 20px 20px;
+  margin: 24px 25px 15px 14px;
 }
 
 @media (min-width: 768px) {
@@ -75,10 +75,6 @@
   &:active {
     fill: #c8e0ba;
   }
-}
-
-.page-footer__copyright {
-  min-width: 165px;
 }
 
 .copyright__link {
@@ -110,4 +106,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  margin: 0;
+}
+
+.copyright__logo {
+  margin-right: -6px;
 }

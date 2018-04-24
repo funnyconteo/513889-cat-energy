@@ -1,7 +1,7 @@
 .example {
   background-color: #f2f2f2;
-  margin-top: 20px;
-  padding: 35px 20px 35px 20px;
+  margin-top: 43px;
+  padding: 16px 20px 35px 20px;
 }
 
 @media (min-width: 768px) {
@@ -23,6 +23,7 @@
   font-size: 36px;
   line-height: 60px;
   margin-top: 0;
+  margin-bottom: 24px;
 }
 
 @media (min-width: 768px) {
@@ -57,7 +58,7 @@
 }
 
 .example__list {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: 768px) {
@@ -78,7 +79,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
+  margin-top: 25px;
 }
 
 @media (min-width: 768px) {
@@ -94,7 +96,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
-  padding-top: 18px;
+  padding-top: 13px;
   padding-bottom: 16px;
   width: 124px;
 }
@@ -151,7 +153,6 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -182,6 +183,10 @@
   }
 }
 
+.example__after {
+  display: none;
+}
+
 @media (min-width: 1440px) {
   .example__wrapper {
     width: 610px;
@@ -191,6 +196,8 @@
 .slider {
   display: flex;
   align-items: center;
+  margin-top: 28px;
+  justify-content: center;
 }
 
 .slider__button {
@@ -198,8 +205,6 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-right: 20px;
-  margin-left: 20px;
   border: none;
   background-color: transparent;
 }
@@ -224,6 +229,8 @@
   position: relative;
   display: flex;
   align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 @media (min-width: 768px) {

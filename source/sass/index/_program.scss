@@ -3,8 +3,8 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% 305px;
-  padding-top: 32px;
-  margin-bottom: 22px;
+  padding-top: 27px;
+  margin-bottom: 2px;
 }
 
 @media (min-width: 768px) {
@@ -76,8 +76,8 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 12px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: 768px) {
@@ -89,6 +89,10 @@
     text-align: left;
     margin-bottom: 50px;
   }
+}
+
+.program-btn {
+  margin-top: 4px;
 }
 
 @media (min-width: 768px) {
