@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cat energy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,14 +54,18 @@
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         </li>
-        <li class="site-list__item site-list__menu">
-          <a class="page-header__link" href="index.html">Главная</a>
-        </li>
-        <li class="site-list__item site-list__menu">
-          <a class="page-header__link">Каталог продукции</a>
-        </li>
-        <li class="site-list__item site-list__menu">
-          <a class="page-header__link" href="form.html">Подбор программы</a>
+        <li class="site-list__user-menu">
+          <ul class="site-list__user-items">
+            <li class="site-list__item site-list__menu">
+              <a class="page-header__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__menu">
+              <a class="page-header__link page-header__link--active">Каталог продукции</a>
+            </li>
+            <li class="site-list__item site-list__menu">
+              <a class="page-header__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
@@ -76,16 +81,16 @@
               <h3 class="item__title">Cat Energy PRO 500 г</h3>
               <table class="item__description">
                 <tr>
-                  <td class="item__value">Объем</td>
-                  <td class="item__field">500 г</td>
+                  <td class="item__value item__cell">Объем</td>
+                  <td class="item__field item__cell">500 г</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Вкус</td>
-                  <td class="item__field">Курица</td>
+                  <td class="item__value item__cell">Вкус</td>
+                  <td class="item__field item__cell">Курица</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Цена</td>
-                  <td class="item__field">700 Р.</td>
+                  <td class="item__value item__cell">Цена</td>
+                  <td class="item__field item__cell">700 Р.</td>
                 </tr>
               </table>
             </div>
@@ -99,16 +104,16 @@
               <h3 class="item__title">Cat Energy PRO 1000 г</h3>
               <table class="item__description">
                 <tr>
-                  <td class="item__value">Объем</td>
-                  <td class="item__field">1000 г</td>
+                  <td class="item__value item__cell">Объем</td>
+                  <td class="item__field item__cell">1000 г</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Вкус</td>
-                  <td class="item__field">Курица</td>
+                  <td class="item__value item__cell">Вкус</td>
+                  <td class="item__field item__cell">Курица</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Цена</td>
-                  <td class="item__field">1000 Р.</td>
+                  <td class="item__value item__cell">Цена</td>
+                  <td class="item__field item__cell">1000 Р.</td>
                 </tr>
               </table>
             </div>
@@ -122,16 +127,16 @@
               <h3 class="item__title">Cat Energy PRO 500 г</h3>
               <table class="item__description">
                 <tr>
-                  <td class="item__value">Объем</td>
-                  <td class="item__field">500 г</td>
+                  <td class="item__value item__cell">Объем</td>
+                  <td class="item__field item__cell">500 г</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Вкус</td>
-                  <td class="item__field">Рыба</td>
+                  <td class="item__value item__cell">Вкус</td>
+                  <td class="item__field item__cell">Рыба</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Цена</td>
-                  <td class="item__field">700 Р.</td>
+                  <td class="item__value item__cell">Цена</td>
+                  <td class="item__field item__cell">700 Р.</td>
                 </tr>
               </table>
             </div>
@@ -145,16 +150,16 @@
               <h3 class="item__title">Cat Energy PRO 1000 г</h3>
               <table class="item__description">
                 <tr>
-                  <td class="item__value">Объем</td>
-                  <td class="item__field">1000 г</td>
+                  <td class="item__value item__cell">Объем</td>
+                  <td class="item__field item__cell">1000 г</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Вкус</td>
-                  <td class="item__field">Рыба</td>
+                  <td class="item__value item__cell">Вкус</td>
+                  <td class="item__field item__cell">Рыба</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Цена</td>
-                  <td class="item__field">1000 Р.</td>
+                  <td class="item__value item__cell">Цена</td>
+                  <td class="item__field item__cell">1000 Р.</td>
                 </tr>
               </table>
             </div>
@@ -168,16 +173,16 @@
               <h3 class="item__title">Cat Energy Slim 500 г</h3>
               <table class="item__description">
                 <tr>
-                  <td class="item__value">Объем</td>
-                  <td class="item__field">500 г</td>
+                  <td class="item__value item__cell">Объем</td>
+                  <td class="item__field item__cell">500 г</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Вкус</td>
-                  <td class="item__field">Гречка</td>
+                  <td class="item__value item__cell">Вкус</td>
+                  <td class="item__field item__cell">Гречка</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Цена</td>
-                  <td class="item__field">700 Р.</td>
+                  <td class="item__value item__cell">Цена</td>
+                  <td class="item__field item__cell">700 Р.</td>
                 </tr>
               </table>
             </div>
@@ -191,16 +196,16 @@
               <h3 class="item__title">Cat Energy Slim 1000 г</h3>
               <table class="item__description">
                 <tr>
-                  <td class="item__value">Объем</td>
-                  <td class="item__field">1000 г</td>
+                  <td class="item__value item__cell">Объем</td>
+                  <td class="item__field item__cell">1000 г</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Вкус</td>
-                  <td class="item__field">Гречка</td>
+                  <td class="item__value item__cell">Вкус</td>
+                  <td class="item__field item__cell">Гречка</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Цена</td>
-                  <td class="item__field">1000 Р.</td>
+                  <td class="item__value item__cell">Цена</td>
+                  <td class="item__field item__cell">1000 Р.</td>
                 </tr>
               </table>
             </div>
@@ -214,16 +219,16 @@
               <h3 class="item__title">Cat Energy Slim 500 г</h3>
               <table class="item__description">
                 <tr>
-                  <td class="item__value">Объем</td>
-                  <td class="item__field">500 г</td>
+                  <td class="item__value item__cell">Объем</td>
+                  <td class="item__field item__cell">500 г</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Вкус</td>
-                  <td class="item__field">Рис</td>
+                  <td class="item__value item__cell">Вкус</td>
+                  <td class="item__field item__cell">Рис</td>
                 </tr>
                 <tr>
-                  <td class="item__value">Цена</td>
-                  <td class="item__field">500 Р.</td>
+                  <td class="item__value item__cell">Цена</td>
+                  <td class="item__field item__cell">500 Р.</td>
                 </tr>
               </table>
             </div>
@@ -231,10 +236,10 @@
           <a class="btn" href="#">Заказать</a>
         </li>
         <li class="catalog__item footer-item">
-          <h3 class="item__title footer-item__title">Показать еще 100500 товаров</h3>
-          <p class="footer-item__description">
-            На самом деле вкусов гораздо больше!
-          </p>
+          <div class="footer-item__title-wrapper">
+            <h3 class="item__title footer-item__title">Показать еще 100500 товаров</h3>
+            <p class="footer-item__description">На самом деле вкусов гораздо больше!</p>
+          </div>
           <a class="btn gray-btn" href="#">Показать все</a>
         </li>
       </ul>
@@ -250,7 +255,7 @@
               <td class="additional__field">100 Р.</td>
             </tr>
           </table>
-          <a href="#" class="btn">Заказать</a>
+          <a href="#" class="btn extra__btn">Заказать</a>
         </li>
         <li class="additional__item">
           <h3 class="additional__title">Питьевая вода</h3>
@@ -260,7 +265,7 @@
               <td class="additional__field">50 Р.</td>
             </tr>
           </table>
-          <a href="#" class="btn">Заказать</a>
+          <a href="#" class="btn extra__btn">Заказать</a>
         </li>
         <li class="additional__item">
           <h3 class="additional__title">Молоко</h3>
@@ -270,9 +275,9 @@
               <td class="additional__field">100 Р.</td>
             </tr>
           </table>
-          <a href="#" class="btn">Заказать</a>
+          <a href="#" class="btn extra__btn">Заказать</a>
         </li>
-        <li class="additional__item">
+        <li class="additional__item additional__item--last">
           <h3 class="additional__title">Витамины</h3>
           <table class="additional__subscribe">
             <tr>
@@ -280,7 +285,7 @@
               <td class="additional__field">300 Р.</td>
             </tr>
           </table>
-          <a href="#" class="btn">Заказать</a>
+          <a href="#" class="btn extra__btn">Заказать</a>
         </li>
         <li class="additional__item additional__footer">
           <svg class="additional__picture" width="55" height="60" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55.5 60" style="enable-background:new 0 0 55.5 60;" xml:space="preserve">
@@ -304,11 +309,14 @@
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <ul class="contacts__list">
-        <li class="contacts__cooperation">
+        <li class="contacts__cooperation contacts__list-item">
           приглашаем к сотрудничеству дилеров!
         </li>
-        <li class="contacts__adress">
-          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        <li class="contacts__list-item">
+          <ul class="contacts__adress-wrapper">
+            <li class="contacts__adress">ул. Большая Конюшенная, д. 19/8</li>
+            <li class="contacts__adress contacts__adress-town">Санкт-Петербург</li>
+          </ul>
         </li>
       </ul>
       <div class="example__map">
