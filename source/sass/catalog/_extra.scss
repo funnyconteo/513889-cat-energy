@@ -1,5 +1,6 @@
 .extra {
   padding-left: 20px;
+  padding-top: 8px;
 }
 
 @media (min-width: 768px) {
@@ -18,7 +19,7 @@
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   display: flex;
   align-items: center;
   color: #111111;
@@ -91,7 +92,7 @@
 }
 
 .additional__item {
-  padding-bottom: 15px;
+  padding-bottom: 16px;
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
 }
@@ -128,6 +129,8 @@
   color: #222222;
   text-transform: uppercase;
   font-weight: normal;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 
 @media (min-width: 768px) {
@@ -146,8 +149,9 @@
 
 .additional__subscribe {
   width: 100%;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
+  border-collapse: collapse;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -205,10 +209,9 @@
   background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 64px;
+  padding-bottom: 25px;
 }
 
 @media (min-width: 768px) {
@@ -242,6 +245,8 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+  margin-top: 62px;
+  width: 65%;
 }
 
 @media (min-width: 768px) {

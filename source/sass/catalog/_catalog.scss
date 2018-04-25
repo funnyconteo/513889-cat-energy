@@ -19,6 +19,8 @@
   font-weight: normal;
   padding-right: 20px;
   padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 28px;
 }
 
 @media (min-width: 768px) {
@@ -48,8 +50,7 @@
 }
 
 .catalog__item {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #ededed;
   padding-left: 20px;
   padding-right: 20px;
@@ -89,12 +90,19 @@
   }
 }
 
+.item__info {
+  width: 50%;
+}
+
 .item__title {
   font-family: "Oswald Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   font-weight: normal;
+  margin-top: 22px;
+  width: 72%;
+  margin-bottom: 9px;
 }
 
 @media (min-width: 768px) {
@@ -107,6 +115,8 @@
 
 .item__description {
   width: 100%;
+  border-collapse: collapse;
+  border: none;
 }
 
 @media (min-width: 768px) {
@@ -164,7 +174,7 @@
     background-position: center;
     width: 30px;
     height: 30px;
-    top: 35px;
+    top: 26px;
     opacity: 0.2;
   }
 }
@@ -186,7 +196,13 @@
 }
 
 .footer-item__title {
-  margin-top: 84px;
+  margin-top: 80px;
+  margin-bottom: 7px;
+}
+
+.footer-item__description {
+  margin-top: 0;
+  margin-bottom: 21px;
 }
 
 @media (min-width: 768px) {
@@ -198,7 +214,7 @@
 .footer-item__title,
 .footer-item__description {
   text-align: center;
-  width: 170px;
+  width: 100%;
 }
 
 .gray-btn {
