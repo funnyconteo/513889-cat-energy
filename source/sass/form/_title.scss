@@ -4,7 +4,7 @@
 
 @media (min-width: 768px) {
   .title-section {
-    padding: 0 30px;
+    padding: 0 29px;
   }
 }
 
@@ -29,6 +29,14 @@
   .title-section__title {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 64px;
+    margin-bottom: 56px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .title-section__title {
+    margin-top: 81px;
   }
 }
 
@@ -47,6 +55,7 @@
     line-height: 30px;
     width: 345px;
     margin-left: 40px;
+    margin-bottom: 52px;
   }
 }
 
