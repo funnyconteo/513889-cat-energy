@@ -13,7 +13,7 @@
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 24px;
+    padding-top: 34px;
   }
 }
 
@@ -21,12 +21,23 @@
   .main-nav__list {
     padding-left: 110px;
     padding-right: 110px;
+    padding-top: 65px;
+  }
+}
+
+.site-list__item {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media (min-width: 768px) {
+  .site-list__item {
+    border: none;
   }
 }
 
 @media (min-width: 768px) {
   .site-list__user-menu {
-    width: 60%;
+    width: 62.1%;
   }
 }
 
@@ -47,31 +58,24 @@
   }
 }
 
-.site-list__item {
-  border-bottom: 1px solid #e6e6e6;
-  padding-top: 11px;
-  padding-bottom: 12px;
-}
-
 .site-list__menu {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 22px;
+  padding-top: 23px;
   padding-bottom: 22px;
   display: flex;
   justify-content: center;
 }
 
 @media (min-width: 768px) {
-  .site-list__item {
-    border: none;
+  .site-list__menu {
     padding: 0;
   }
 }
 
 @media (min-width: 1440px) {
   .site-list__menu {
-    margin-left: 40px;
+    margin-left: 35px;
   }
 }
 
@@ -79,7 +83,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 12px;
+  padding-top: 14px;
   padding-bottom: 12px;
   padding-left: 20px;
   padding-right: 20px;
@@ -93,10 +97,12 @@
 
 .page-header__link {
   font-family: "Oswald Medium", "Arial", sans-serif;
+  font-size: 20px;
   line-height: 20px;
   display: block;
   text-transform: uppercase;
   color: #000000;
+  font-weight: normal;
 
 
   &:hover {
@@ -119,6 +125,12 @@
 }
 
 @media (min-width: 768px) {
+  .page-header__link {
+    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .page-header__link--active {
     position: relative;
 
@@ -135,7 +147,7 @@
       position: absolute;
       height: 2px;
       width: 100%;
-      bottom: -12px;
+      bottom: -9px;
       left: 0;
       background-color: #68b738;
     }
@@ -143,6 +155,11 @@
 }
 
 @media (min-width: 1440px) {
+  .page-header__link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
   .page-header__link--index {
     color: #ffffff;
 
