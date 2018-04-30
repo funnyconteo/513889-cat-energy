@@ -5,35 +5,44 @@
   background-size: 100% 305px;
   padding-top: 27px;
   margin-bottom: 2px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: 768px) {
   .program {
     position: relative;
     background: none;
-    padding: 64px 30px 509px 117px;
+    padding: 54px 30px 509px 117px;
     margin: 0;
   }
 }
 
 @media (min-width: 1440px) {
   .program {
-    padding: 115px 110px 248px 191px;
+    padding: 105px 110px 248px 191px;
 
     &::after {
       content: "";
       position: absolute;
       display: block;
-      background-image: url("../img/index-background-mobile@1x.jpg");
+      background-color: #64a83c;
+      background-image: url("../img/index-background-desktop@1x.jpg");
       background-position: top right;
       background-size: 720px 696px;
       background-repeat: no-repeat;
       z-index: -1;
       width: 720px;
       height: 697px;
-      top: -107px;
+      top: -118px;
       right: 1px;
-    }
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }   
   }
 }
 
@@ -99,7 +108,7 @@
 }
 
 .program-btn {
-  margin-top: 4px;
+  margin-top: 0px;
 }
 
 @media (min-width: 768px) {
@@ -115,8 +124,8 @@
 @media (min-width: 768px) {
   .program__image {
     position: absolute;
-    width: 627px;
-    height: 608px;
+    width: 709px;
+    height: 609px;
     bottom: -19px;
     right: 4%;
     z-index: -1;
@@ -125,10 +134,10 @@
 
 @media (min-width: 1440px) {
   .program__image {
-    width: 509px;
-    height: 495px;
-    top: 38px;
-    left: 42%;
+    width: 552px;
+    height: 499px;
+    top: 25px;
+    left: 39%;
     z-index: 0;
   }
 
@@ -136,5 +145,6 @@
     width: 245px;
     height: 52px;
     font-size: 20px;
+    margin-top: 4px;
   }
 }
