@@ -52,13 +52,14 @@ html {
   line-height: 20px;
   display: flex;
   flex-wrap: wrap;
-  min-height: 40px;
   background-color: #68b738;
   color: #ffffff;
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   &:hover {
     background-color: #5eaa2f;

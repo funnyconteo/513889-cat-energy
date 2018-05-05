@@ -170,6 +170,8 @@
   width: 80px;
   background-color: #f2f2f2;
   bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 768px) {
@@ -183,6 +185,12 @@
 
   .example__field-description--short {
     width: 115px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example__field-description {
+    background-color: #f2f2f2;
   }
 }
 
@@ -397,10 +405,12 @@
   border-radius: 10px;
   position: absolute;
   left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .toggle-active {
-  transform: translateX(35px);
+  transform: translate(35px, -50%);
 }
 
 @media (min-width: 768px) {
@@ -409,9 +419,11 @@
     height: 32px;
     border-radius: 50%;
     background-color: #ffffff;
-    left: 168px;
+    left: 200px;
+    top: 0;
     cursor: pointer;
     position: relative;
+    transform: none;
 
     &::after {
       content: "";

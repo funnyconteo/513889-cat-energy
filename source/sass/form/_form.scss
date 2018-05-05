@@ -218,6 +218,8 @@
 .form__input-logo {
   position: absolute;
   right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (min-width: 768px) {
@@ -546,7 +548,10 @@
 
 .form-btn {
   border: none;
+  padding-top: 11px;
+  padding-bottom: 9px;
   margin-bottom: 21px;
+  outline: none;
 }
 
 @media (min-width: 768px) {
