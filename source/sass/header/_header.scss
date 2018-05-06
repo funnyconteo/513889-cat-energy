@@ -138,6 +138,18 @@
   }
 }
 
+.page-header__link--active {
+  position: relative;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 768px) {
   .page-header__link {
     font-family: "Oswald Regular", "Arial", sans-serif;
@@ -192,10 +204,19 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav__toggle--active {
+  background-image: url("../img/icon-mobile-menu.svg");
 }
 
 @media (min-width: 768px) {
   .main-nav__toggle {
     display: none;
   }
+}
+
+.hide {
+  display: none;
 }
