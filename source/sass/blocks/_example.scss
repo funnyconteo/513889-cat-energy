@@ -8,11 +8,11 @@
   .example {
     margin: 0;
     background: none;
-    padding: 44px 32px 0 30px;
+    padding: 44px 0 0 0;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example {
     padding: 0;
     padding-top: 25px;
@@ -20,23 +20,26 @@
 }
 
 .example__title {
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 60px;
   margin-top: 0;
   margin-bottom: 24px;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
   .example__title {
     font-size: 60px;
     line-height: 60px;
-    font-weight: normal;
+    font-weight: 400;
     margin-bottom: 49px;
+    margin-left: 30px;
+    margin-right: 32px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example__title {
     margin-left: 111px;
     margin-right: 111px;
@@ -44,7 +47,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example__content {
     display: flex;
     justify-content: space-between;
@@ -72,7 +75,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example__description {
     margin: 0;
     width: 100%;
@@ -92,16 +95,19 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 64px;
+    padding-left: 32px;
+    padding-right: 30px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example__list {
     width: 435px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -119,7 +125,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example__field-wrapper {
     margin: 0;
     width: 365px;
@@ -146,11 +152,11 @@
 }
 
 .example__field-title {
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -188,16 +194,17 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example__field-description {
     background-color: #f2f2f2;
   }
 }
 
 .example__cost {
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
 }
@@ -212,7 +219,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example__cost {
     width: 325px;
     display: flex;
@@ -235,7 +242,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example__wrapper {
     width: 610px;
     padding: 0;
@@ -259,6 +266,7 @@
   background-size: 311px 232px;
   background-image: url("../img/before-mobile@1x.png");
   background-position: -18px;
+  z-index: 1;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/before-mobile@2x.png");
@@ -281,7 +289,7 @@
     height: 499px;
     background-size: 688px 518px;
     background-image: url("../img/before-tablet@1x.png");
-    background-position: 17px -16px;
+    background-position: 47px -16px;
     position: absolute;
     bottom: 117px;
     left: 0;
@@ -308,7 +316,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .example__before,
   .example__after {
     position: absolute;
@@ -319,6 +327,7 @@
     left: 0;
     background-image: url("../img/before-desktop@1x.png");
     background-position: -39px -16px;
+    width: 53%;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/before-desktop@2x.png");
@@ -349,28 +358,9 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .slider {
     margin: 0;
-  }
-}
-
-.slider__button {
-  font-family: "Oswald Regular", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  border: none;
-  background-color: transparent;
-}
-
-@media (min-width: 768px) {
-  .slider__button {
-    font-size: 20px;
-    line-height: 20px;
-    position: relative;
-    padding: 4px 0 7px 0;
-    border-bottom: 1px dashed #bebebe;
   }
 }
 
@@ -409,7 +399,7 @@
   transform: translateY(-50%);
 }
 
-.toggle-active {
+.slider__toggle-button--active {
   transform: translate(35px, -50%);
 }
 
@@ -424,6 +414,7 @@
     cursor: pointer;
     position: relative;
     transform: none;
+    border: 1px solid transparent;
 
     &::after {
       content: "";

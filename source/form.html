@@ -22,12 +22,13 @@
         <li class="site-list__item site-list__header">
           <a class="page-header__logo-image page-header__link" href="index.html">
             <picture>
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
               <img class="page-header__logo" src="img/logo-mobile.svg" width="192" height="38" alt="логотип cat energy">
             </picture>
           </a>
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <!--hide - скрывает кнопку при неработающем js-->
+          <button class="main-nav__toggle hide" type="button" aria-label="Открыть меню"></button>
         </li>
         <li class="site-list__user-menu">
           <ul class="site-list__user-items">
@@ -91,7 +92,8 @@
           <div class="form__feedback-wrapper">
             <p class="form__text-wrapper form__mail-wrapper">
               <label class="form__text-data form__label" for="email">E-mail:*</label>
-              <input class="form__text-input form__mail-input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+              <!--error - подставляется через js при некорректном вводе-->
+              <input class="form__text-input form__mail-input error" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
               <svg class="form__input-logo" width="17" height="13" viewBox="0 0 17 13">
                 <use xlink:href="build/img/sprite.svg#sprite-form__input-mail"></use>
               </svg>
@@ -133,32 +135,31 @@
           </div>
         </fieldset>
         <div class="form__footer">
-          <button class="btn form-btn" type="submit">Отправить заявку</button>
+          <button class="btn form__btn" type="submit">Отправить заявку</button>
           <p class="form__footer-subtext">* — Обязательные поля</p>
         </div>
       </form>
     </section>
-    <section class="contacts">
+    <section class="contacts index-contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
-      <ul class="contacts__list">
-        <li class="contacts__cooperation contacts__list-item">
+      <div class="contacts__list">
+        <p class="contacts__cooperation contacts__list-item">
           приглашаем к&nbsp;сотрудничеству дилеров!
-        </li>
-        <li class="contacts__list-item">
-          <ul class="contacts__adress-wrapper">
-            <li class="contacts__adress">ул. Большая Конюшенная, д. 19/8</li>
-            <li class="contacts__adress contacts__adress-town">Санкт-Петербург</li>
-          </ul>
-        </li>
-      </ul>
-      <div class="example__map">
+        </p>
+        <div class="contacts__list-item">
+          <div class="contacts__address-wrapper">
+            <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address contacts__address-town">Санкт-Петербург</p>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__map-wrapper">
         <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1fbe645a96d016028145b9239ac29a9cc98b0b2180aec4d29e2d09fb25909462&amp;source=constructor"></iframe>
         <picture class="contacts__hidden-map">
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
-
-          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
           <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8">
         </picture>
@@ -177,21 +178,21 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Мы в Вконтакте">
-            <svg class="social__link--vkontakte" width="22" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+            <svg class="social__link-vkontakte" width="22" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
               <use xlink:href="build/img/sprite.svg#sprite-vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Мы в Инстаграме">
-            <svg class="social__link--instagram" width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+            <svg class="social__link-instagram" width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
               <use xlink:href="build/img/sprite.svg#sprite-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Мы в Фэйсбуке">
-            <svg class="social__link--facebook" width="10" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+            <svg class="social__link-facebook" width="10" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
               <use xlink:href="build/img/sprite.svg#sprite-facebook"></use>
             </svg>
           </a>

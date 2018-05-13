@@ -5,7 +5,8 @@ var Width = document.body.clientWidth;
 
 if (Width < 768) {
   mainNav.classList.add("hide");
-  Button.classList.add("main-nav__toggle--active")
+  Button.classList.add("main-nav__toggle--active");
+  Button.classList.remove("hide")
 }
 
 var showList = function(evt) {

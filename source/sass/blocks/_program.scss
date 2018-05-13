@@ -20,7 +20,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .program {
     padding: 105px 110px 248px 191px;
 
@@ -63,9 +63,10 @@
 }
 
 .program__title {
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: #ffffff;
   text-align: center;
   width: 280px;
@@ -82,9 +83,10 @@
 }
 
 .program__description {
-  font-family: "Oswald Regular", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 25px;
@@ -103,21 +105,22 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .program__description {
     margin-bottom: 49px;
   }
 }
 
-.program-btn {
+.program__btn {
   margin-top: 0;
   font-size: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
-  .program-btn {
+  .program__btn {
     font-size: 20px;
     line-height: 20px;
     width: 245px;
@@ -138,7 +141,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .program__image {
     width: 552px;
     height: 499px;

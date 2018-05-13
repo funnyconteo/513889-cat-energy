@@ -17,7 +17,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .main-nav__list {
     padding-left: 110px;
     padding-right: 110px;
@@ -52,7 +52,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .site-list__user-items {
     justify-content: flex-end;
   }
@@ -73,7 +73,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .site-list__menu {
     margin-left: 35px;
   }
@@ -96,13 +96,13 @@
 }
 
 .page-header__link {
-  font-family: "Oswald Medium", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   display: block;
   text-transform: uppercase;
   color: #000000;
-  font-weight: normal;
+  font-weight: 500;
 
 
   &:hover {
@@ -131,7 +131,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .page-header__logo {
     width: 202px;
     height: 59px;
@@ -152,9 +152,10 @@
 
 @media (min-width: 768px) {
   .page-header__link {
-    font-family: "Oswald Regular", "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
   }
 
   .page-header__link--active {
@@ -180,7 +181,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .page-header__link {
     font-size: 20px;
     line-height: 25px;
@@ -220,3 +221,4 @@
 .hide {
   display: none;
 }
+

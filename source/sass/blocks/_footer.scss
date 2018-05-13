@@ -12,7 +12,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .page-footer {
     padding-left: 110px;
     padding-right: 104px;
@@ -83,21 +83,21 @@
 }
 
 @media (min-width: 768px) {
-  .social__link--vkontakte {
+  .social__link-vkontakte {
     width: 30px;
     height: 16px;
   }
 }
 
 @media (min-width: 768px) {
-  .social__link--instagram {
+  .social__link-instagram {
     width: 23px;
     height: 23px;
   }
 }
 
 @media (min-width: 768px) {
-  .social__link--facebook {
+  .social__link-facebook {
     width: 14px;
     height: 28px;
   }
@@ -110,20 +110,13 @@
   fill: #444444;
   align-items: center;
 
-  &:hover > .copyright__title {
-    color: #68b738;
-  }
-
   &:hover > .copyright__logo {
     fill: #68b738;
   }
 
+  &:active > .copyright__logo,
   &:active > .copyright__title {
-    color: #c8e0ba;
-  }
-
-  &:active > .copyright__logo {
-    fill: #c8e0ba;
+    opacity: 0.3;
   }
 }
 
