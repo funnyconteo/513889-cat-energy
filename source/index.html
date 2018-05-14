@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="fonts/oswaldregular.woff2" type="font/woff2" rel="preload" as="font">
+  <link href="fonts/oswaldmedium.woff2" type="font/woff2" rel="preload" as="font">
 </head>
 <body>
   <div style="display:none">
@@ -60,7 +60,7 @@
           <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
           <img class="program__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="«cat energy pro» с курицей" width="280" height="270">
         </picture>
-        <a class="btn program__btn" href="#">Подобрать программу</a>
+        <a class="btn program__btn" href="program.html">Подобрать программу</a>
       </div>
     </section>
     <section class="categories">
@@ -76,7 +76,7 @@
             лазить по деревьям? Пора на диету! Cat Energy Slim поможет
             вашему питомцу сбросить лишний вес.
           </p>
-          <a class="categories__link" href="">Каталог Slim</a>
+          <a class="categories__link" href="items-slim.html">Каталог Slim</a>
         </li>
         <li class="categories__item">
           <div class="categories__title-wrapper">
@@ -88,7 +88,7 @@
             Серия Cat Energy Pro поможет вашему коту нарастить
             необходимые мышцы!
           </p>
-          <a class="categories__link" href="#">Каталог pro</a>
+          <a class="categories__link" href="items-pro.html">Каталог pro</a>
         </li>
       </ul>
     </section>
@@ -157,7 +157,8 @@
           <div class="example__slider-wrapper slider">
             <button class="slider__button">Было</button>
             <div class="slider__toggle-field">
-              <div class="slider__toggle-button slider__toggle-button--active"></div>
+              <!--модификатор "active" добавляет transform к ползунку-->
+              <div class="slider__toggle-button"></div>
             </div>
             <button class="slider__button">Стало</button>
           </div>
@@ -233,7 +234,7 @@
       </a>
     </div>
   </footer>
-  <script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
 </body>

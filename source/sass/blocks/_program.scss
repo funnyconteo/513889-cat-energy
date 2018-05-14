@@ -13,7 +13,6 @@
 
 @media (min-width: 768px) {
   .program {
-    position: relative;
     background: none;
     padding: 54px 30px 509px 117px;
     margin: 0;
@@ -34,10 +33,10 @@
       background-size: 720px 696px;
       background-repeat: no-repeat;
       z-index: -1;
-      width: 720px;
+      width: 49.5%;
       height: 697px;
-      top: -118px;
-      right: 1px;
+      top: 0;
+      right: 0;
 
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg");
@@ -111,31 +110,12 @@
   }
 }
 
-.program__btn {
-  margin-top: 0;
-  font-size: 14px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: 400;
-}
-
-@media (min-width: 768px) {
-  .program__btn {
-    font-size: 20px;
-    line-height: 20px;
-    width: 245px;
-    margin-top: 4px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-
 @media (min-width: 768px) {
   .program__image {
     position: absolute;
     width: 709px;
     height: 609px;
-    bottom: -19px;
+    bottom: 75px;
     right: 4%;
     z-index: -1;
   }
@@ -145,8 +125,8 @@
   .program__image {
     width: 552px;
     height: 499px;
-    top: 25px;
-    left: 39%;
+    top: 140px;
+    left: 39.4%;
     z-index: 0;
   }
 
