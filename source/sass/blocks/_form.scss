@@ -46,12 +46,6 @@
   }
 }
 
-.form__feedback-legend {
-  &::after {
-    margin-top: -16px;
-  }
-}
-
 @media (min-width: 768px) {
   .form__legend {
     font-size: 36px;
@@ -305,6 +299,10 @@
 .form__feedback-legend {
   margin-top: 25px;
   margin-bottom: 34px;
+
+  &::after {
+    margin-top: -16px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -572,7 +570,7 @@
   }
 }
 
-.form__text-input::webkit-input-placeholder {
+.form__text-input::-webkit-input-placeholder {
   padding-top: 7px;
   font-weight: 400;
   font-size: 16px;
@@ -662,97 +660,95 @@
 }
 
 @media (min-width: 768px) {
-  .form__text-input::webkit-input-placeholder {
-  padding-top: 7px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
-}
+  .form__text-input::-webkit-input-placeholder {
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 
-.form__text-input:-moz-placeholder {
-  padding-top: 7px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
-}
+  .form__text-input:-moz-placeholder {
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 
-.form__text-input::-moz-placeholder {
-  padding-top: 7px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
-}
+  .form__text-input::-moz-placeholder {
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 
-.form__text-input:-ms-input-placeholder {
-  padding-top: 7px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
-}
+  .form__text-input:-ms-input-placeholder {
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 
-.form__text-input::placeholder {
-  padding-top: 7px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
-}
+  .form__text-input::placeholder {
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 
-.form__comment-textarea::-webkit-input-placeholder {
-  padding-top: 7px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
-}
+  .form__comment-textarea::-webkit-input-placeholder {
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 
-.form__comment-textarea:-moz-placeholder {
-  padding-top: 7px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
-}
+  .form__comment-textarea:-moz-placeholder {
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 
-.form__comment-textarea::-moz-placeholder {
-  padding-top: 7px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
-}
+  .form__comment-textarea::-moz-placeholder {
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 
-.form__comment-textarea:-ms-input-placeholder {
-  padding-top: 7px;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
-}
+  .form__comment-textarea:-ms-input-placeholder {
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 
-.form__comment-textarea::placeholder {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
-  color: #444444;
-  text-transform: uppercase;
+  .form__comment-textarea::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #444444;
+    text-transform: uppercase;
+  }
 }
-}
-
-
 
 .error {
   border: 1px solid #ff8888;

@@ -24,7 +24,6 @@
   display: flex;
   align-items: center;
   color: #111111;
-  font-weight: normal;
 
   &::after {
     content: "";
@@ -138,7 +137,6 @@
   font-weight: 400;
   color: #222222;
   text-transform: uppercase;
-  font-weight: normal;
   margin-top: 13px;
   margin-bottom: 13px;
 }
