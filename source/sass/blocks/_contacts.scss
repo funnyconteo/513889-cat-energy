@@ -14,6 +14,7 @@
   align-items: center;
   padding: 29px 20px 25px 19px;
   margin: 0;
+  z-index: 3;
 }
 
 @media (min-width: 768px) {
@@ -29,7 +30,6 @@
     min-height: 200px;
     padding: 0;
     position: absolute;
-    z-index: 1;
     background-color: #ffffff;
     padding-left: 76px;
     padding-right: 84px;
@@ -109,7 +109,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  height: 100%;
+}
+
+.contacts__hidden-img {
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -125,7 +130,9 @@
 }
 
 .contacts__map {
+  position: relative;
   width: 100%;
   height: 100%;
   border: none;
+  z-index: 1;
 }
