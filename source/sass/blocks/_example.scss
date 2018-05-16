@@ -51,9 +51,9 @@
   .example__content {
     display: flex;
     justify-content: space-between;
-    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 72.5%, #eaeaea 72.5%);
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 73.5%, #eaeaea 73.5%);
     padding-left: 111px;
-    padding-right: 111px;
+    padding-right: 94px;
   }
 }
 
@@ -96,7 +96,7 @@
     flex-wrap: wrap;
     margin-bottom: 64px;
     padding-left: 32px;
-    padding-right: 30px;
+    padding-right: 14px;
   }
 }
 
@@ -234,7 +234,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 50%, #eaeaea 50%);
+    background-image: linear-gradient(to right, #f2f2f2, #f2f2f2 51%, #eaeaea 51%);
     padding-bottom: 67px;
     padding-top: 363px;
     margin-top: 218px;
@@ -285,7 +285,7 @@
 
 @media (min-width: 768px) {
   .example__before {
-    width: 50%;
+    width: 51%;
     height: 499px;
     background-size: 688px 518px;
     background-image: url("../img/before-tablet@1x.png");
@@ -327,7 +327,7 @@
     left: 0;
     background-image: url("../img/before-desktop@1x.png");
     background-position: -39px -16px;
-    width: 53%;
+    width: 53.5%;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/before-desktop@2x.png");
@@ -355,6 +355,7 @@
 @media (min-width: 768px) {
   .slider {
     margin-top: 0;
+    padding-left: 15px;
   }
 }
 

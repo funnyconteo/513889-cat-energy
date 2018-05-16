@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link href="fonts/oswaldregular.woff2" type="font/woff2" rel="preload" as="font">
   <link href="fonts/oswaldmedium.woff2" type="font/woff2" rel="preload" as="font">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
 </head>
 <body>
   <div style="display:none">
@@ -94,14 +95,14 @@
               <label class="form__text-data form__label" for="email">E-mail:*</label>
               <!--error - подставляется через js при некорректном вводе-->
               <input class="form__text-input form__mail-input error" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-              <svg class="form__input-logo" width="17" height="13" viewBox="0 0 17 13">
+              <svg class="form__input-logo" width="17" height="13" viewBox="0 0 16 12">
                 <use xlink:href="build/img/sprite.svg#sprite-form__input-mail"></use>
               </svg>
             </p>
             <p class="form__text-wrapper form__phone-wrapper">
               <label class="form__text-data form__label" for="tel">Телефон:*</label>
               <input class="form__text-input form__mail-input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
-              <svg class="form__input-logo" width="20" height="20" viewBox="0 0 20 20">
+              <svg class="form__input-logo" width="20" height="20" viewBox="0 0 19 19">
                 <use xlink:href="build/img/sprite.svg#sprite-form__input-mobile"></use>
               </svg>
             </p>
@@ -178,21 +179,21 @@
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Мы в Вконтакте">
-            <svg class="social__link-vkontakte" width="22" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+            <svg class="social__link-vkontakte" width="22" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21 11" style="enable-background:new 0 0 22 12;" xml:space="preserve">
               <use xlink:href="build/img/sprite.svg#sprite-vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Мы в Инстаграме">
-            <svg class="social__link-instagram" width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+            <svg class="social__link-instagram" width="16" height="16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15 15" style="enable-background:new 0 0 16 16;" xml:space="preserve">
               <use xlink:href="build/img/sprite.svg#sprite-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link" href="#" aria-label="Мы в Фэйсбуке">
-            <svg class="social__link-facebook" width="10" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+            <svg class="social__link-facebook" width="10" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9 18" style="enable-background:new 0 0 10 19;" xml:space="preserve">
               <use xlink:href="build/img/sprite.svg#sprite-facebook"></use>
             </svg>
           </a>
@@ -208,8 +209,9 @@
       </a>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
   <script src="js/picturefill.min.js"></script>
   <script src="js/svgxuse.min.js"></script>
+  <script src="js/svg4everybody.legacy.min.js"></script>
 </body>
 </html>

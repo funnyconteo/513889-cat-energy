@@ -3,10 +3,13 @@ var siteList = document.querySelector(".main-nav__list");
 var Button = document.querySelector(".main-nav__toggle");
 var Width = document.body.clientWidth;
 
-if (Width < 768) {
-  mainNav.classList.add("hide");
-  Button.classList.add("main-nav__toggle--active");
-}
+window.addEventListener('resize', function() {
+  if (Width < 768) {
+    mainNav.classList.add("hide");
+    Button.classList.add("main-nav__toggle--active");
+  }
+});
+
 
 Button.classList.remove("hide")
 

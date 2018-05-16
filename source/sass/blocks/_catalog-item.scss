@@ -17,17 +17,28 @@
 }
 
 @media (min-width: 768px) {
-  .item__img-wrapper {
-    width: 100%;
+  .item__link-img {
     position: absolute;
     top: -46px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    right: 0;
   }
 
-  .item__img-wrapper--big {
+  .item__link-img--big {
     top: -82px;
   }
+
+  // .item__img-wrapper {
+  //   width: 100%;
+  //   position: absolute;
+  //   top: -46px;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+
+  // .item__img-wrapper--big {
+  //   top: -82px;
+  // }
 }
 
 .item__info {
