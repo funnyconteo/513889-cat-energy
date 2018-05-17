@@ -4,10 +4,11 @@ var Button = document.querySelector(".main-nav__toggle");
 var Width = document.body.clientWidth;
 
 window.addEventListener('resize', function() {
-  if (Width < 768) {
-    mainNav.classList.add("hide");
-    Button.classList.add("main-nav__toggle--active");
-  }
+    var Width = document.body.clientWidth;
+    if (Width < 768) {
+        mainNav.classList.add("hide");
+        Button.classList.add("main-nav__toggle--active");
+    }
 });
 
 
