@@ -1,0 +1,35 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  color: #444444;
+  fill: #444444;
+  align-items: center;
+
+  &:hover > .copyright__logo {
+    fill: #68b738;
+  }
+
+  &:active > .copyright__logo,
+  &:active > .copyright__title {
+    opacity: 0.3;
+  }
+}
+
+.copyright__title {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.copyright__logo {
+  margin-right: -7px;
+}
+
+@media (min-width: 768px) {
+  .copyright__logo {
+    margin-left: 14px;
+    margin-right: 0;
+  }
+}

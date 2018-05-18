@@ -1,6 +1,6 @@
 @import "typography";
 @import "global";
-@import "blocks/header";
+@import "blocks/page-header";
 @import "blocks/program";
 @import "blocks/categories";
 @import "blocks/advantages";
@@ -8,9 +8,14 @@
 @import "blocks/catalog";
 @import "blocks/extra";
 @import "blocks/title-section";
-@import "blocks/form";
+@import "blocks/form-section";
 @import "blocks/contacts";
 @import "blocks/footer";
 @import "blocks/catalog-item";
 @import "blocks/btn";
 @import "blocks/site-list";
+@import "blocks/main-nav";
+@import "blocks/hide";
+@import "blocks/additional";
+@import "blocks/social";
+@import "blocks/copyright";

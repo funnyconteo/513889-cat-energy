@@ -762,7 +762,7 @@
   }
 }
 
-.error {
+.form__text-input--error {
   border: 1px solid #ff8888;
   outline: 1px solid #ff8888;
 
@@ -781,6 +781,6 @@
   }
 }
 
-.error + .form__input-logo {
+.form__text-input--error + .form__input-logo {
   fill: #ff8888;
 }
