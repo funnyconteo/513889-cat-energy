@@ -1,5 +1,5 @@
-@import "blocks/typography";
-@import "blocks/global";
+@import "typography";
+@import "global";
 @import "blocks/header";
 @import "blocks/program";
 @import "blocks/categories";
@@ -7,10 +7,10 @@
 @import "blocks/example";
 @import "blocks/catalog";
 @import "blocks/extra";
-@import "blocks/title";
+@import "blocks/title-section";
 @import "blocks/form";
 @import "blocks/contacts";
 @import "blocks/footer";
 @import "blocks/catalog-item";
 @import "blocks/btn";
-@import "blocks/hidden-menu";
+@import "blocks/site-list";
