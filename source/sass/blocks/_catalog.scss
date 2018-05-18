@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
   .catalog {
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 13px;
     padding-top: 39px;
   }
 }
@@ -53,16 +53,16 @@
     flex-wrap: wrap;
     border: none;
     margin-top: 165px;
-    margin-left: -30px;
-    margin-right: -79px;
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: 1300px) {
   .catalog__items {
     margin-top: 0;
-    display: flex;
-    justify-content: space-between;
     margin-left: 0;
     margin-right: 0;
   }
